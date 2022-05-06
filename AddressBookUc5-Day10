@@ -1,0 +1,38 @@
+package com.BridgeLabs.day10;
+import java.util.ArrayList;
+
+public class AddressBookUC5 {
+	String firstName;
+	String lastName;
+	String city;
+	String state;
+	String zip;
+	String phoneNo;
+	String mail;
+	String Add    = "A";
+	String Edit   = "E";
+	String Delete = "D";
+
+	public AddressBookUC5(String firstName,String lastName,String city,
+			String state,String zip2,String phoneNo,String mail){
+		this.firstName=firstName;
+		this.lastName=lastName;
+		this.city=city;
+		this.state=state;
+		this.zip=zip2;
+		this.phoneNo=phoneNo;
+		this.mail=mail;
+	}
+
+	public static void Welcome(){
+		System.out.println("Welcome to Address Book Program ");
+	}
+
+	@Override
+	public String toString() {
+		return "\n First_name = " +  firstName + "\n Last_name  = " + lastName + 
+				"\n City       = " + city        + "\n State      = " +  state + 
+				"\n Ph number  = " + phoneNo   + "\n Zip        = " + zip + 
+				"\n Email      = " + mail;
+	}
+}
